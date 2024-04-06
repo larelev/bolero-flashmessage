@@ -1,10 +1,10 @@
 <?php
 
-namespace Funbox\Plugins\FlashMessage\Factories;
+namespace Bolero\Plugins\FlashMessage\Factories;
 
-use Funbox\Framework\Template\TwigFactoryInterface;
-use Funbox\Plugins\FlashMessage\FlashMessage;
-use Funbox\Plugins\FlashMessage\FlashMessageInterface;
+use Bolero\Framework\Template\TwigFactoryInterface;
+use Bolero\Plugins\FlashMessage\FlashMessage;
+use Bolero\Plugins\FlashMessage\FlashMessageInterface;
 use Twig\Environment;
 use Twig\TwigFunction;
 

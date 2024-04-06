@@ -1,8 +1,8 @@
 <?php
 
-namespace Funbox\Plugins\FlashMessage;
+namespace Bolero\Plugins\FlashMessage;
 
-use Funbox\Plugins\FlashMessage\Enums\FlashType;
+use Bolero\Plugins\FlashMessage\Enums\FlashType;
 
 interface FlashMessageInterface
 {

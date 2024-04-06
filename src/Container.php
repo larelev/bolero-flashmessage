@@ -1,8 +1,8 @@
 <?php
 
-namespace Funbox\Plugins\FlashMessage;
+namespace Bolero\Plugins\FlashMessage;
 
-use Funbox\Framework\Container\PluginContainerInterface;
+use Bolero\Framework\Container\PluginContainerInterface;
 use League\Container\DefinitionContainerInterface;
 
 class Container implements PluginContainerInterface
@@ -10,8 +10,8 @@ class Container implements PluginContainerInterface
     public static function provide(DefinitionContainerInterface $container): DefinitionContainerInterface
     {
         $container->addShared(
-            \Funbox\Plugins\FlashMessage\FlashMessageInterface::class,
-            \Funbox\Plugins\FlashMessage\FlashMessage::class,
+            \Bolero\Plugins\FlashMessage\FlashMessageInterface::class,
+            \Bolero\Plugins\FlashMessage\FlashMessage::class,
         );
 
         return $container;

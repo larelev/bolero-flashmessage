@@ -1,10 +1,10 @@
 <?php
 
-namespace Funbox\Plugins\FlashMessage\Tests;
+namespace Bolero\Plugins\FlashMessage\Tests;
 
-use Funbox\Framework\Session\Session;
-use Funbox\Plugins\FlashMessage\Enums\FlashType;
-use Funbox\Plugins\FlashMessage\FlashMessage;
+use Bolero\Framework\Session\Session;
+use Bolero\Plugins\FlashMessage\Enums\FlashType;
+use Bolero\Plugins\FlashMessage\FlashMessage;
 use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;
 

@@ -1,0 +1,31 @@
+{
+    "name": "larelev/bolero-flashmessage",
+    "description": "FlashMessage plugin for Bolero framework",
+    "type": "library",
+    "license": "GPL-3.0+",
+    "version": "0.1.0",
+    "autoload": {
+        "psr-4": {
+            "Bolero\\Plugins\\FlashMessage\\": "src/"
+        }
+    },
+    "authors": [{
+        "name": "David Blanchard",
+        "email": "dpjb@hotmail.fr",
+        "role": "Creator"
+    }],
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../framework",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "larelev/bolero-framework": "@dev"
+    }
+}

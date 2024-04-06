@@ -1,9 +1,9 @@
 <?php
 
-namespace Funbox\Plugins\FlashMessage;
+namespace Bolero\Plugins\FlashMessage;
 
-use Funbox\Framework\Session\Session;
-use Funbox\Plugins\FlashMessage\Enums\FlashType;
+use Bolero\Framework\Session\Session;
+use Bolero\Plugins\FlashMessage\Enums\FlashType;
 
 class FlashMessage implements FlashMessageInterface
 {

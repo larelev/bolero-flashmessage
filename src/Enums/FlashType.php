@@ -1,6 +1,6 @@
 <?php
 
-namespace Funbox\Plugins\FlashMessage\Enums;
+namespace Bolero\Plugins\FlashMessage\Enums;
 
 enum FlashType {
     case Info;

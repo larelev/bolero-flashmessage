@@ -1,12 +1,12 @@
 <?php
 
-namespace Funbox\Plugins\FlashMessage\Middlewares;
+namespace Bolero\Plugins\FlashMessage\Middlewares;
 
-use Funbox\Framework\Http\Request;
-use Funbox\Framework\Http\Response;
-use Funbox\Framework\Middleware\MiddlewareInterface;
-use Funbox\Framework\Middleware\RequestHandlerInterface;
-use Funbox\Plugins\FlashMessage\FlashMessageInterface;
+use Bolero\Framework\Http\Request;
+use Bolero\Framework\Http\Response;
+use Bolero\Framework\Middleware\MiddlewareInterface;
+use Bolero\Framework\Middleware\RequestHandlerInterface;
+use Bolero\Plugins\FlashMessage\FlashMessageInterface;
 
 readonly class FlashMessenger implements MiddlewareInterface
 {
