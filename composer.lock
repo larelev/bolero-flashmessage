@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "53fb989ca5009733c9b506a7c27dd324",
+    "content-hash": "0f7b75168f9f7324e81461730e09160d",
     "packages": [
         {
             "name": "doctrine/dbal",
@@ -164,17 +164,11 @@
         },
         {
             "name": "larelev/bolero-framework",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/larelev/bolero-framework.git",
-                "reference": "c7eab4510af51ce2f452b548d4417a4bbd907504"
-            },
+            "version": "0.1.0",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/larelev/bolero-framework/zipball/c7eab4510af51ce2f452b548d4417a4bbd907504",
-                "reference": "c7eab4510af51ce2f452b548d4417a4bbd907504",
-                "shasum": ""
+                "type": "path",
+                "url": "../framework",
+                "reference": "8129c50a430b1e2883a52ac484ef47ac8e6843d7"
             },
             "require": {
                 "doctrine/dbal": "^4.1.x-dev",
@@ -190,14 +184,17 @@
                 "phpunit/phpunit": "11.1.x-dev",
                 "symfony/var-dumper": "^7.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "Bolero\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Bolero\\Framework\\Tests\\": "tests/"
+                }
+            },
             "license": [
                 "GPL-3.0+"
             ],
@@ -209,11 +206,10 @@
                 }
             ],
             "description": "Professional PHP experiments",
-            "support": {
-                "issues": "https://github.com/larelev/bolero-framework/issues",
-                "source": "https://github.com/larelev/bolero-framework/tree/main"
-            },
-            "time": "2024-04-06T15:39:53+00:00"
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
         },
         {
             "name": "league/container",
