@@ -7,17 +7,19 @@ use Bolero\Framework\Http\Response;
 use Bolero\Framework\Middleware\MiddlewareInterface;
 use Bolero\Framework\Middleware\RequestHandlerInterface;
 use Bolero\Plugins\FlashMessage\FlashMessageInterface;
+use Exception;
 
 readonly class FlashMessenger implements MiddlewareInterface
 {
 
     public function __construct(
         private FlashMessageInterface $flashMessage
-    ) {
+    )
+    {
     }
 
     /**
-     * @throws \Exception
+     * @throws Exception
      */
     public function process(Request $request, RequestHandlerInterface $requestHandler): Response
     {

@@ -11,13 +11,6 @@ use PHPUnit\Framework\TestCase;
 //include dirname(__DIR__) . DIRECTORY_SEPARATOR .  "bootstrap.php";
 class FlashMessageTest extends TestCase
 {
-    protected function setUp(): void
-    {
-        $session = new Session();
-        $session->clear();
-        $session->start();
-    }
-
     #[Test]
     public function setAndGetFlashTest()
     {
@@ -28,5 +21,12 @@ class FlashMessageTest extends TestCase
         $this->assertTrue($flash->has(FlashType::Error));
         $this->assertEquals(['Great job!'], $flash->get(FlashType::Success));
         $this->assertEquals([], $flash->get(FlashType::Warning));
+    }
+
+    protected function setUp(): void
+    {
+        $session = new Session();
+        $session->clear();
+        $session->start();
     }
 }

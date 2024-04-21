@@ -2,7 +2,8 @@
 
 namespace Bolero\Plugins\FlashMessage\Enums;
 
-enum FlashType {
+enum FlashType
+{
     case Info;
     case Warning;
     case Success;
